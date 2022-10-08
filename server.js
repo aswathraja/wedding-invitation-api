@@ -138,4 +138,4 @@ https.createServer({
 	key: fs.readFileSync(config.SSL_KEY_PATH),
   },app).listen(port, () => logger.info("Express API listening on HTTPS port : " + port + " with PID : " + process.pid + " and PPID : " + process.ppid ));
 
-app.listen(3001, () => logger.info("Express API listening on HTTP port : 3000" + " with PID : " + process.pid + " and PPID : " + process.ppid ))
+app.listen(3001, () => logger.info("Express API listening on HTTP port : 3001" + " with PID : " + process.pid + " and PPID : " + process.ppid ))
