@@ -91,6 +91,14 @@ app.use(express.json());
 // Parse requests of content-type: application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
+app.use((req,res,next) => {
+	if(req.protocol === 'http')
+	{
+		res.redirect(301,`https://$(req.headers.host)$(req.url)`);
+	}
+	next();
+});
+
 app.use(express.static(path.join(__dirname, 'build')));
 
 // Initialize the DB Object through Sequelize
