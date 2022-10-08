@@ -11,6 +11,7 @@ const helmet = require('helmet');
 const config = require("./app/config/app.config");
 const logger = require("./app/config/logger");
 const path = require('path');
+const fs = require("fs");
 var cors_proxy = require('cors-anywhere');
 
 
