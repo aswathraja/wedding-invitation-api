@@ -124,8 +124,8 @@ app.get('/', function (req, res) {
   
 cors_proxy.createServer({
     originWhitelist: [], // Allow all origins
-}).listen(82, "0.0.0.0", function() {
-    console.log('Running CORS Anywhere on ' + '82');
+}).listen(3003, "0.0.0.0", function() {
+    console.log('Running CORS Anywhere on ' + '3003');
 });
 
 // Define the port number to listen on and start the app.
