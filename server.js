@@ -129,4 +129,7 @@ cors_proxy.createServer({
 
 // Define the port number to listen on and start the app.
 const port = config.apiPort||81;
-https.createServer(app).listen(port, () => logger.info("Express API listening on port : " + port + " with PID : " + process.pid + " and PPID : " + process.ppid ));
+https.createServer({
+	key: fs.readFileSync(config.SSL_KEY_PATH),
+	cert: fs.readFileSync(config.SSL_CERT_PATH),
+  },app).listen(port, () => logger.info("Express API listening on port : " + port + " with PID : " + process.pid + " and PPID : " + process.ppid ));

@@ -20,4 +20,6 @@ module.exports = {
 	TOKEN_PATH:"<Enter the path to your token.json file from Google API>",
 	CREDENTIALS_PATH:"<Enter the path to your credentials.json file from Google API>",
 	logPath:"./logs/",
+	SSL_KEY_PATH:"/home/ubuntu/ssl/aswathraja.com.key",
+	SSL_CERT_PATH:"/home/ubuntu/ssl/aswathraja_com/aswathraja_com.crt"
 };
