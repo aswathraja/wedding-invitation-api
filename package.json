@@ -1,0 +1,46 @@
+{
+  "_from": "github:aswathraja/wedding-invitation-api",
+  "_id": "wedding-invitation-api@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/wedding=invitation",
+  "_phantomChildren": {},
+  "author": {
+    "name": "Aswath Raja",
+    "email": "aswathraja@gmail.com"
+  },
+  "bundleDependencies": [],
+  "dependencies": {
+    "axios": "^0.27.2",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "cors-anywhere": "^0.4.4",
+    "exceljs": "^4.3.0",
+    "express": "^4.18.1",
+    "googleapis": "^104.0.0",
+    "helmet": "^5.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.2",
+    "winston": "^3.8.1"
+  },
+  "deprecated": false,
+  "description": "A Node.js Restful API using Express, Sequelize and MySQL database for home automation",
+  "keywords": [
+    "nodejs",
+    "express",
+    "mysql",
+    "restapi"
+  ],
+  "license": "MIT",
+  "main": "server.js",
+  "name": "wedding-invitation-api",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "2.0.0"
+}

@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.611c46b2.css",
+    "main.js": "/static/js/main.14cd71ee.js",
+    "static/js/787.9b74c651.chunk.js": "/static/js/787.9b74c651.chunk.js",
+    "static/media/Gopinath Gardens Arial.mp4": "/static/media/Gopinath Gardens Arial.c78d763fe5a2a825b098.mp4",
+    "static/media/Aswath & Bathmeshwari Wedding Invitation.pdf": "/static/media/Aswath & Bathmeshwari Wedding Invitation.97c9cc795991f88f6fe9.pdf",
+    "static/media/hero-min.jpg": "/static/media/hero-min.f89c9c7270aacb9c1c1d.jpg",
+    "static/media/bootstrap.min.css.map": "/static/media/bootstrap.min.css.0a4a7ef5e3b1cdaeab89.map",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.b48ad290d0335879a92b.ttf",
+    "static/media/fontawesome-webfont.svg": "/static/media/fontawesome-webfont.87ae43292345cd91cbc5.svg",
+    "static/media/Logo Small.png": "/static/media/Logo Small.389cc425a4162658b41d.png",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.f9ee61fab3c11e2f3ed3.ttf",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.66104b766c3d0462b3c5.woff2",
+    "static/media/fontawesome-webfont.ttf": "/static/media/fontawesome-webfont.3aafdf0641262e5c3037.ttf",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.e1a247a5ef41e1975742.woff2",
+    "static/media/fontawesome-webfont.woff": "/static/media/fontawesome-webfont.e646f99c3a5716022363.woff",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.c85f891f3546f43416b8.eot",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.abf801b7acb6705a15ad.ttf",
+    "static/media/logo-lg.png": "/static/media/logo-lg.0b5442d0a6f42bb1a1ce.png",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.639d2000c1ece92eaec8.woff2",
+    "static/media/logo.png": "/static/media/logo.107c98f43fbe60d9d1ad.png",
+    "static/media/fancybox_loading@2x.gif": "/static/media/fancybox_loading@2x.13563fd2e1fdbc6f8b9c.gif",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.f601162ae669f88823a3.ttf",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.745989aab0d69cab7e70.woff2",
+    "static/media/Aswath & Bathmeshwari Wedding.ics": "/static/media/Aswath & Bathmeshwari Wedding.2941dba6c0d90a69426a.ics",
+    "index.html": "/index.html",
+    "main.611c46b2.css.map": "/static/css/main.611c46b2.css.map",
+    "main.14cd71ee.js.map": "/static/js/main.14cd71ee.js.map",
+    "787.9b74c651.chunk.js.map": "/static/js/787.9b74c651.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.611c46b2.css",
+    "static/js/main.14cd71ee.js"
+  ]
+}

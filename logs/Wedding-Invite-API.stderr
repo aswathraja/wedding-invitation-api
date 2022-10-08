@@ -1,0 +1,149 @@
+28/9/2022 5:48:57 PM [ERROR] undefined
+28/9/2022 5:48:57 PM [ERROR] POST /api/rsvp/retrieversvp - 26.232 ms
+28/9/2022 5:49:30 PM [ERROR] undefined
+28/9/2022 5:49:30 PM [ERROR] POST /api/rsvp/retrieversvp - 7.958 ms
+28/9/2022 5:49:30 PM [ERROR] undefined
+28/9/2022 5:49:30 PM [ERROR] POST /api/rsvp/retrieversvp - 4.643 ms
+28/9/2022 5:56:26 PM [ERROR] POST /api/rsvp/retrieversvp - 90.204 ms
+28/9/2022 5:56:33 PM [ERROR] POST /api/rsvp/retrieversvp - 26.682 ms
+28/9/2022 5:59:42 PM [ERROR] POST /api/rsvp/retrieversvp - 2.927 ms
+28/9/2022 5:59:42 PM [ERROR] POST /api/rsvp/retrieversvp - 0.895 ms
+28/9/2022 5:59:43 PM [ERROR] POST /api/rsvp/retrieversvp - 1.428 ms
+28/9/2022 5:59:44 PM [ERROR] POST /api/rsvp/retrieversvp - 1.323 ms
+28/9/2022 5:59:44 PM [ERROR] POST /api/rsvp/retrieversvp - 1.217 ms
+28/9/2022 5:59:44 PM [ERROR] POST /api/rsvp/retrieversvp - 0.716 ms
+28/9/2022 5:59:45 PM [ERROR] POST /api/rsvp/retrieversvp - 1.267 ms
+28/9/2022 6:06:37 PM [ERROR] POST /api/rsvp/retrieversvp - 1.807 ms
+28/9/2022 6:06:38 PM [ERROR] POST /api/rsvp/retrieversvp - 1.188 ms
+28/9/2022 6:06:38 PM [ERROR] POST /api/rsvp/retrieversvp - 1.254 ms
+28/9/2022 6:06:38 PM [ERROR] POST /api/rsvp/retrieversvp - 0.979 ms
+28/9/2022 6:06:38 PM [ERROR] POST /api/rsvp/retrieversvp - 0.757 ms
+28/9/2022 6:06:38 PM [ERROR] POST /api/rsvp/retrieversvp - 1.168 ms
+28/9/2022 6:06:39 PM [ERROR] POST /api/rsvp/retrieversvp - 1.107 ms
+28/9/2022 6:06:39 PM [ERROR] POST /api/rsvp/retrieversvp - 0.790 ms
+28/9/2022 6:06:39 PM [ERROR] POST /api/rsvp/retrieversvp - 1.598 ms
+28/9/2022 6:06:39 PM [ERROR] POST /api/rsvp/retrieversvp - 0.798 ms
+28/9/2022 6:06:39 PM [ERROR] POST /api/rsvp/retrieversvp - 0.671 ms
+28/9/2022 6:06:40 PM [ERROR] POST /api/rsvp/retrieversvp - 0.744 ms
+28/9/2022 6:06:40 PM [ERROR] POST /api/rsvp/retrieversvp - 0.676 ms
+28/9/2022 6:06:40 PM [ERROR] POST /api/rsvp/retrieversvp - 0.979 ms
+28/9/2022 6:06:40 PM [ERROR] POST /api/rsvp/retrieversvp - 1.012 ms
+28/9/2022 6:06:41 PM [ERROR] POST /api/rsvp/retrieversvp - 0.675 ms
+28/9/2022 6:06:41 PM [ERROR] POST /api/rsvp/retrieversvp - 0.719 ms
+28/9/2022 6:06:41 PM [ERROR] POST /api/rsvp/retrieversvp - 2.541 ms
+28/9/2022 6:06:42 PM [ERROR] POST /api/rsvp/retrieversvp - 0.706 ms
+28/9/2022 6:06:42 PM [ERROR] POST /api/rsvp/retrieversvp - 0.655 ms
+28/9/2022 6:06:42 PM [ERROR] POST /api/rsvp/retrieversvp - 0.686 ms
+28/9/2022 6:06:42 PM [ERROR] POST /api/rsvp/retrieversvp - 0.776 ms
+28/9/2022 6:06:42 PM [ERROR] POST /api/rsvp/retrieversvp - 0.685 ms
+28/9/2022 6:06:43 PM [ERROR] POST /api/rsvp/retrieversvp - 1.628 ms
+28/9/2022 6:08:00 PM [ERROR] POST /api/rsvp/retrieversvp - 2.166 ms
+28/9/2022 6:08:08 PM [ERROR] POST /api/rsvp/retrieversvp - 1.392 ms
+28/9/2022 6:08:22 PM [ERROR] POST /api/rsvp/retrieversvp - 1.002 ms
+28/9/2022 6:08:37 PM [ERROR] POST /api/rsvp/retrieversvp - 1.155 ms
+28/9/2022 6:08:37 PM [ERROR] POST /api/rsvp/retrieversvp - 0.730 ms
+28/9/2022 6:53:36 PM [ERROR] POST /api/rsvp/retrieversvp - 1.994 ms
+28/9/2022 6:53:58 PM [ERROR] POST /api/rsvp/retrieversvp - 8.131 ms
+28/9/2022 6:54:52 PM [ERROR] POST /api/rsvp/retrieversvp - 1.314 ms
+28/9/2022 6:56:24 PM [ERROR] POST /api/rsvp/retrieversvp - 6.505 ms
+28/9/2022 6:57:57 PM [ERROR] POST /api/rsvp/retrieversvp - 15.465 ms
+28/9/2022 6:57:57 PM [ERROR] POST /api/rsvp/retrieversvp - 2.179 ms
+28/9/2022 6:57:57 PM [ERROR] POST /api/rsvp/retrieversvp - 1.463 ms
+28/9/2022 6:58:02 PM [ERROR] POST /api/rsvp/retrieversvp - 1.398 ms
+28/9/2022 6:58:03 PM [ERROR] POST /api/rsvp/retrieversvp - 1.168 ms
+28/9/2022 6:58:03 PM [ERROR] POST /api/rsvp/retrieversvp - 1.201 ms
+28/9/2022 6:58:04 PM [ERROR] POST /api/rsvp/retrieversvp - 1.943 ms
+29/9/2022 5:33:17 AM [ERROR] POST /api/rsvp/retrieversvp - 17.958 ms
+29/9/2022 5:33:17 AM [ERROR] POST /api/rsvp/retrieversvp - 3.340 ms
+29/9/2022 5:33:22 AM [ERROR] POST /api/rsvp/retrieversvp - 1.592 ms
+29/9/2022 5:33:23 AM [ERROR] POST /api/rsvp/retrieversvp - 1.719 ms
+29/9/2022 5:33:23 AM [ERROR] POST /api/rsvp/retrieversvp - 1.471 ms
+29/9/2022 5:33:24 AM [ERROR] POST /api/rsvp/retrieversvp - 1.097 ms
+29/9/2022 5:33:24 AM [ERROR] POST /api/rsvp/retrieversvp - 1.216 ms
+29/9/2022 5:33:24 AM [ERROR] POST /api/rsvp/retrieversvp - 1.341 ms
+29/9/2022 5:33:25 AM [ERROR] POST /api/rsvp/retrieversvp - 1.467 ms
+29/9/2022 5:33:25 AM [ERROR] POST /api/rsvp/retrieversvp - 1.183 ms
+29/9/2022 5:33:26 AM [ERROR] POST /api/rsvp/retrieversvp - 1.286 ms
+29/9/2022 5:33:26 AM [ERROR] POST /api/rsvp/retrieversvp - 1.283 ms
+29/9/2022 5:33:27 AM [ERROR] POST /api/rsvp/retrieversvp - 0.878 ms
+29/9/2022 5:33:30 AM [ERROR] POST /api/rsvp/retrieversvp - 0.935 ms
+29/9/2022 5:34:04 AM [ERROR] POST /api/rsvp/retrieversvp - 4.553 ms
+29/9/2022 5:34:04 AM [ERROR] POST /api/rsvp/retrieversvp - 1.406 ms
+29/9/2022 5:34:05 AM [ERROR] POST /api/rsvp/retrieversvp - 1.289 ms
+29/9/2022 5:34:06 AM [ERROR] POST /api/rsvp/retrieversvp - 0.752 ms
+29/9/2022 5:34:24 AM [ERROR] POST /api/rsvp/retrieversvp - 0.954 ms
+29/9/2022 5:35:17 AM [ERROR] POST /api/rsvp/retrieversvp - 119.491 ms
+29/9/2022 5:37:25 AM [ERROR] POST /api/rsvp/retrieversvp - 1.781 ms
+29/9/2022 5:37:27 AM [ERROR] POST /api/rsvp/retrieversvp - 1.673 ms
+29/9/2022 5:37:29 AM [ERROR] POST /api/rsvp/retrieversvp - 1.436 ms
+29/9/2022 5:37:30 AM [ERROR] POST /api/rsvp/retrieversvp - 1.052 ms
+29/9/2022 5:37:37 AM [ERROR] POST /api/rsvp/retrieversvp - 1.307 ms
+29/9/2022 5:37:38 AM [ERROR] POST /api/rsvp/retrieversvp - 0.845 ms
+29/9/2022 5:37:39 AM [ERROR] POST /api/rsvp/retrieversvp - 1.750 ms
+29/9/2022 5:37:49 AM [ERROR] POST /api/rsvp/retrieversvp - 0.844 ms
+29/9/2022 5:37:49 AM [ERROR] POST /api/rsvp/retrieversvp - 1.310 ms
+29/9/2022 5:39:09 AM [ERROR] POST /api/rsvp/retrieversvp - 1.671 ms
+29/9/2022 5:39:41 AM [ERROR] POST /api/rsvp/retrieversvp - 1.934 ms
+29/9/2022 5:39:44 AM [ERROR] POST /api/rsvp/retrieversvp - 1.075 ms
+29/9/2022 5:39:44 AM [ERROR] POST /api/rsvp/retrieversvp - 0.911 ms
+29/9/2022 5:39:44 AM [ERROR] POST /api/rsvp/retrieversvp - 1.112 ms
+29/9/2022 5:39:46 AM [ERROR] POST /api/rsvp/retrieversvp - 0.867 ms
+29/9/2022 5:39:46 AM [ERROR] POST /api/rsvp/retrieversvp - 0.448 ms
+29/9/2022 5:39:46 AM [ERROR] POST /api/rsvp/retrieversvp - 0.906 ms
+29/9/2022 5:39:47 AM [ERROR] POST /api/rsvp/retrieversvp - 1.065 ms
+29/9/2022 5:42:03 AM [ERROR] undefined
+29/9/2022 5:42:03 AM [ERROR] POST /api/rsvp/saversvp - 3093.616 ms
+30/9/2022 6:16:26 AM [ERROR] POST /api/rsvp/retrieversvp - 16.463 ms
+30/9/2022 6:18:00 AM [ERROR] POST /api/rsvp/retrieversvp - 23.420 ms
+30/9/2022 3:49:22 PM [ERROR] uncaughtException: getaddrinfo ENOTFOUND script.google.com
+Error: getaddrinfo ENOTFOUND script.google.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+3/10/2022 11:20:21 AM [ERROR] POST /api/rsvp/saversvp - 0.695 ms
+3/10/2022 11:20:22 AM [ERROR] POST /api/rsvp/saversvp - 0.745 ms
+3/10/2022 11:20:23 AM [ERROR] POST /api/rsvp/saversvp - 0.760 ms
+3/10/2022 11:20:23 AM [ERROR] POST /api/rsvp/saversvp - 1.255 ms
+3/10/2022 11:20:27 AM [ERROR] POST /api/rsvp/saversvp - 2.336 ms
+3/10/2022 11:20:28 AM [ERROR] POST /api/rsvp/saversvp - 1.698 ms
+3/10/2022 11:20:29 AM [ERROR] POST /api/rsvp/saversvp - 0.973 ms
+3/10/2022 11:20:30 AM [ERROR] POST /api/rsvp/saversvp - 0.890 ms
+3/10/2022 11:20:31 AM [ERROR] POST /api/rsvp/saversvp - 0.795 ms
+3/10/2022 11:20:32 AM [ERROR] POST /api/rsvp/saversvp - 0.786 ms
+7/10/2022 5:43:46 PM [ERROR] GET / - 7.806 ms
+8/10/2022 4:03:44 AM [ERROR] uncaughtException: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle
+TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (/Users/aswathraja/Documents/GitHub/wedding-invitation-api/node_modules/express/lib/response.js:1150:12)
+    at ServerResponse.json (/Users/aswathraja/Documents/GitHub/wedding-invitation-api/node_modules/express/lib/response.js:271:14)
+    at ServerResponse.send (/Users/aswathraja/Documents/GitHub/wedding-invitation-api/node_modules/express/lib/response.js:162:21)
+    at /Users/aswathraja/Documents/GitHub/wedding-invitation-api/app/services/rsvp.service.js:148:9
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+8/10/2022 4:05:39 AM [ERROR] uncaughtException: The "path" argument must be of type string. Received an instance of Object
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received an instance of Object
+    at new NodeError (node:internal/errors:372:5)
+    at validateString (node:internal/validators:120:11)
+    at extname (node:path:1386:5)
+    at new View (/Users/aswathraja/Documents/GitHub/wedding-invitation-api/node_modules/express/lib/view.js:56:14)
+    at Function.render (/Users/aswathraja/Documents/GitHub/wedding-invitation-api/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/Users/aswathraja/Documents/GitHub/wedding-invitation-api/node_modules/express/lib/response.js:1039:7)
+    at /Users/aswathraja/Documents/GitHub/wedding-invitation-api/app/services/rsvp.service.js:148:9
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+8/10/2022 4:08:58 AM [ERROR] GET /rsvp/getvenuemap - 6.405 ms
+8/10/2022 4:08:59 AM [ERROR] GET /rsvp/getvenuemap - 2.228 ms
+8/10/2022 4:16:51 AM [ERROR] uncaughtException: The "path" argument must be of type string. Received an instance of Object
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received an instance of Object
+    at new NodeError (node:internal/errors:372:5)
+    at validateString (node:internal/validators:120:11)
+    at extname (node:path:1386:5)
+    at new View (/Users/aswathraja/Documents/GitHub/wedding-invitation-api/node_modules/express/lib/view.js:56:14)
+    at Function.render (/Users/aswathraja/Documents/GitHub/wedding-invitation-api/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/Users/aswathraja/Documents/GitHub/wedding-invitation-api/node_modules/express/lib/response.js:1039:7)
+    at /Users/aswathraja/Documents/GitHub/wedding-invitation-api/app/services/rsvp.service.js:148:9
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+8/10/2022 4:18:51 AM [ERROR] GET /rsvp/getvenuemap - 7.029 ms
+8/10/2022 4:19:18 AM [ERROR] GET /rsvp/getvenuemap - 6.642 ms
