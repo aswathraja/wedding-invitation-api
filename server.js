@@ -129,12 +129,6 @@ require("./app/routes/rsvp.routes.js")(app);
 app.get('/', function (req, res) {
 	res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
-  
-cors_proxy.createServer({
-    originWhitelist: [], // Allow all origins
-}).listen(3003, function() {
-    console.log('Running CORS Anywhere on ' + '3003');
-});
 
 // Define the port number to listen on and start the app.
 const port = config.apiPort||3000;
@@ -142,4 +136,6 @@ https.createServer({
 	cert: fs.readFileSync(config.SSL_CERT_PATH),
 	ca: fs.readFileSync(config.SSL_CA_PATH),
 	key: fs.readFileSync(config.SSL_KEY_PATH),
-  },app).listen(port, () => logger.info("Express API listening on port : " + port + " with PID : " + process.pid + " and PPID : " + process.ppid ));
+  },app).listen(port, () => logger.info("Express API listening on HTTPS port : " + port + " with PID : " + process.pid + " and PPID : " + process.ppid ));
+
+app.listen(3001, () => logger.info("Express API listening on HTTP port : " + port + " with PID : " + process.pid + " and PPID : " + process.ppid ))

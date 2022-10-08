@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.611c46b2.css",
-    "main.js": "/static/js/main.f256e018.js",
+    "main.js": "/static/js/main.b12574cd.js",
     "static/js/787.9b74c651.chunk.js": "/static/js/787.9b74c651.chunk.js",
     "static/media/Gopinath Gardens Arial.mp4": "/static/media/Gopinath Gardens Arial.c78d763fe5a2a825b098.mp4",
     "static/media/Aswath & Bathmeshwari Wedding Invitation.pdf": "/static/media/Aswath & Bathmeshwari Wedding Invitation.97c9cc795991f88f6fe9.pdf",
@@ -26,11 +26,11 @@
     "static/media/Aswath & Bathmeshwari Wedding.ics": "/static/media/Aswath & Bathmeshwari Wedding.2941dba6c0d90a69426a.ics",
     "index.html": "/index.html",
     "main.611c46b2.css.map": "/static/css/main.611c46b2.css.map",
-    "main.f256e018.js.map": "/static/js/main.f256e018.js.map",
+    "main.b12574cd.js.map": "/static/js/main.b12574cd.js.map",
     "787.9b74c651.chunk.js.map": "/static/js/787.9b74c651.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.611c46b2.css",
-    "static/js/main.f256e018.js"
+    "static/js/main.b12574cd.js"
   ]
 }
