@@ -129,8 +129,9 @@ cors_proxy.createServer({
 });
 
 // Define the port number to listen on and start the app.
-const port = config.apiPort||81;
+const port = config.apiPort||3000;
 https.createServer({
-	key: fs.readFileSync(config.SSL_KEY_PATH),
 	cert: fs.readFileSync(config.SSL_CERT_PATH),
-  },app).listen(port, () => logger.info("Express API listening on port : " + port + " with PID : " + process.pid + " and PPID : " + process.ppid ));
+	ca: fs.readFileSync(config.SSL_CA_PATH),
+	key: fs.readFileSync(config.SSL_KEY_PATH),
+  },app).listen(port, "aswathraja.com", () => logger.info("Express API listening on port : " + port + " with PID : " + process.pid + " and PPID : " + process.ppid ));

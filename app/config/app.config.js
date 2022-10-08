@@ -16,10 +16,12 @@ module.exports = {
 		acquire: 30000,
 		idle: 10000
 	},
-	apiPort:"81",
+	apiPort:"3000",
 	TOKEN_PATH:"<Enter the path to your token.json file from Google API>",
 	CREDENTIALS_PATH:"<Enter the path to your credentials.json file from Google API>",
 	logPath:"./logs/",
-	SSL_KEY_PATH:"/home/ubuntu/ssl/aswathraja.com.key",
-	SSL_CERT_PATH:"/home/ubuntu/ssl/aswathraja_com/aswathraja_com.crt"
+	SSL_CERT_PATH:"/home/ubuntu/ssl/aswathraja_com/aswathraja_com.crt",
+	SSL_CA_PATH:"/home/ubuntu/ssl/aswathraja_com/aswathraja_com.ca-bundle",
+	SSL_KEY_PATH:"/home/ubuntu/ssl/aswathraja.com.key"
+
 };
