@@ -47,7 +47,7 @@ app.disable('x-powered-by');
 
 // Logging requests to the API and add required headers for static asset requests
 app.use(async function(req,res,next) {
-	res.setHeader("Content-Security-Policy","frame-src https://www.aswathraja.com");
+	res.setHeader("Content-Security-Policy","frame-src https://google.com/maps/");
 	res.setHeader("Cross-Origin-Resource-Policy","cross-origin");
 	if(req.originalUrl.includes("assets"))
 	{
