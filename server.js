@@ -47,7 +47,7 @@ app.disable('x-powered-by');
 
 // Logging requests to the API and add required headers for static asset requests
 app.use(async function(req,res,next) {
-	res.setHeader("Content-Security-Policy","frame-src https://www.google.com");
+	res.setHeader("Content-Security-Policy","frame-src https://www.aswathraja.com");
 	res.setHeader("Cross-Origin-Resource-Policy","cross-origin");
 	if(req.originalUrl.includes("assets"))
 	{
@@ -132,7 +132,7 @@ app.get('/', function (req, res) {
   
 cors_proxy.createServer({
     originWhitelist: [], // Allow all origins
-}).listen(3003, "0.0.0.0", function() {
+}).listen(3003, function() {
     console.log('Running CORS Anywhere on ' + '3003');
 });
 
@@ -142,4 +142,4 @@ https.createServer({
 	cert: fs.readFileSync(config.SSL_CERT_PATH),
 	ca: fs.readFileSync(config.SSL_CA_PATH),
 	key: fs.readFileSync(config.SSL_KEY_PATH),
-  },app).listen(port, "aswathraja.com", () => logger.info("Express API listening on port : " + port + " with PID : " + process.pid + " and PPID : " + process.ppid ));
+  },app).listen(port, () => logger.info("Express API listening on port : " + port + " with PID : " + process.pid + " and PPID : " + process.ppid ));
