@@ -19,14 +19,15 @@ const logger = require("../config/logger");
 exports.retrieveRSVP = async (req, res) => {
 	try{
 			// Return 'Bad Request' response for any invalid request
-			if (!req.body.phone && !req.body.email) {
+			if (!req.body.phone && !req.body.email || (req.body.phone === '' && req.body.email === '')) {
 				res.status(400).send({
 					message: "Email or Phone number is invalid or missing",
 					body:req.body
 				});
 				return;
 			}
-			var condition = {[Op.or]: [{ phone: req.body.phone },{ email: req.body.email }]};
+			var condition = {[Op.or]: [{ phone: req.body.phone.length > 0 ? req.body.phone : undefined },{ email: req.body.email.length > 0? req.body.email : undefined }]};
+			console.log("condition",condition)
 			rsvps.findOne({where: condition,include:reservations})
 			.then(rsvp => {
 				if(rsvp !== null)
