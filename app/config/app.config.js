@@ -16,7 +16,8 @@ module.exports = {
 		acquire: 30000,
 		idle: 10000
 	},
-	apiPort:"3000",
+	httpsPort:3000,
+	httpPort:3001,
 	TOKEN_PATH:"<Enter the path to your token.json file from Google API>",
 	CREDENTIALS_PATH:"<Enter the path to your credentials.json file from Google API>",
 	logPath:"./logs/",

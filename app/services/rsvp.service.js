@@ -26,8 +26,16 @@ exports.retrieveRSVP = async (req, res) => {
 				});
 				return;
 			}
-			var condition = {[Op.or]: [{ phone: req.body.phone.length > 0 ? req.body.phone : undefined },{ email: req.body.email.length > 0? req.body.email : undefined }]};
-			console.log("condition",condition)
+			var parsedConditions = []
+			if(req.body.email.length > 0)
+			{
+				parsedConditions.push({'email':req.body.email})
+			}
+			if(req.body.phone.length > 0)
+			{
+				parsedConditions.push({'phone':req.body.phone})
+			}
+			var condition = {[Op.or]: parsedConditions};
 			rsvps.findOne({where: condition,include:reservations})
 			.then(rsvp => {
 				if(rsvp !== null)

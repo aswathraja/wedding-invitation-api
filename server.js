@@ -12,7 +12,6 @@ const config = require("./app/config/app.config");
 const logger = require("./app/config/logger");
 const path = require('path');
 const fs = require("fs");
-var cors_proxy = require('cors-anywhere');
 
 
 
@@ -131,11 +130,13 @@ app.get('/', function (req, res) {
 });
 
 // Define the port number to listen on and start the app.
-const port = config.apiPort||3000;
+const httpsPort = config.httpsPort||3000;
+const httpPort = config.httpPort||3001;
+
 https.createServer({
 	cert: fs.readFileSync(config.SSL_CERT_PATH),
 	ca: fs.readFileSync(config.SSL_CA_PATH),
 	key: fs.readFileSync(config.SSL_KEY_PATH),
-  },app).listen(port, () => logger.info("Express API listening on HTTPS port : " + port + " with PID : " + process.pid + " and PPID : " + process.ppid ));
+  },app).listen(httpsPort, () => logger.info("Express API listening on HTTPS port : " + httpsPort + " with PID : " + process.pid + " and PPID : " + process.ppid ));
 
-app.listen(3001, () => logger.info("Express API listening on HTTP port : 3001" + " with PID : " + process.pid + " and PPID : " + process.ppid ))
+app.listen(httpPort, () => logger.info("Express API listening on HTTP port : " + httpPort + " with PID : " + process.pid + " and PPID : " + process.ppid ))
