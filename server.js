@@ -90,13 +90,13 @@ app.use(express.json());
 // Parse requests of content-type: application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
-app.use((req,res,next) => {
-	if(req.protocol === 'http')
-	{
-		res.redirect(301,`https://` + req.headers.host + req.url );
-	}
-	next();
-});
+// app.use((req,res,next) => {
+// 	if(req.protocol === 'http')
+// 	{
+// 		res.redirect(301,`https://` + req.headers.host + req.url );
+// 	}
+// 	next();
+// });
 
 app.use(express.static(path.join(__dirname, 'build')));
 
@@ -133,10 +133,10 @@ app.get('/', function (req, res) {
 const httpsPort = config.httpsPort||3000;
 const httpPort = config.httpPort||3001;
 
-https.createServer({
-	cert: fs.readFileSync(config.SSL_CERT_PATH),
-	ca: fs.readFileSync(config.SSL_CA_PATH),
-	key: fs.readFileSync(config.SSL_KEY_PATH),
-  },app).listen(httpsPort, () => logger.info("Express API listening on HTTPS port : " + httpsPort + " with PID : " + process.pid + " and PPID : " + process.ppid ));
+// https.createServer({
+// 	cert: fs.readFileSync(config.SSL_CERT_PATH),
+// 	ca: fs.readFileSync(config.SSL_CA_PATH),
+// 	key: fs.readFileSync(config.SSL_KEY_PATH),
+//   },app).listen(httpsPort, () => logger.info("Express API listening on HTTPS port : " + httpsPort + " with PID : " + process.pid + " and PPID : " + process.ppid ));
 
 app.listen(httpPort, () => logger.info("Express API listening on HTTP port : " + httpPort + " with PID : " + process.pid + " and PPID : " + process.ppid ))

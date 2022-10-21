@@ -5934,3 +5934,48 @@ TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Re
 8/10/2022 6:09:39 AM [INFO] Express API listening on port : 81 with PID : 50773 and PPID : 50772
 8/10/2022 6:11:41 AM [INFO] Express API server has been successfully shutdown with an interrupt
 8/10/2022 6:11:44 AM [INFO] Express API listening on port : 81 with PID : 51409 and PPID : 51408
+21/10/2022 4:49:03 PM [ERROR] uncaughtException: ENOENT: no such file or directory, open '/home/ubuntu/ssl/aswathraja_com/aswathraja_com.crt'
+Error: ENOENT: no such file or directory, open '/home/ubuntu/ssl/aswathraja_com/aswathraja_com.crt'
+    at Object.openSync (node:fs:585:3)
+    at Object.readFileSync (node:fs:453:35)
+    at Object.<anonymous> (/Users/aswathraja/Documents/GitHub/wedding-invitation-api/server.js:137:11)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+21/10/2022 4:49:50 PM [INFO] Express API listening on HTTP port : 3001 with PID : 9027 and PPID : 9026
+21/10/2022 4:50:04 PM [INFO] GET / - 6.473 ms
+21/10/2022 4:50:04 PM [INFO] GET /static/css/main.2a18b1c7.css - 4.460 ms
+21/10/2022 4:50:04 PM [INFO] GET /static/js/main.be364b91.js - 6.281 ms
+21/10/2022 4:50:04 PM [INFO] GET /static/media/logo.107c98f43fbe60d9d1ad.png - 0.681 ms
+21/10/2022 4:50:04 PM [INFO] GET /static/media/hero-min.f89c9c7270aacb9c1c1d.jpg - 1.726 ms
+21/10/2022 4:50:04 PM [INFO] GET /static/media/logo-lg.0b5442d0a6f42bb1a1ce.png - 1.527 ms
+21/10/2022 4:50:04 PM [INFO] GET /static/media/Logo%20Small.389cc425a4162658b41d.png - 2.141 ms
+21/10/2022 4:50:04 PM [INFO] GET /static/media/fa-regular-400.639d2000c1ece92eaec8.woff2 - 2.150 ms
+21/10/2022 4:50:04 PM [INFO] GET /static/media/fa-solid-900.66104b766c3d0462b3c5.woff2 - 2.806 ms
+21/10/2022 4:50:05 PM [INFO] GET /favicon.ico - 2.673 ms
+21/10/2022 4:50:12 PM [INFO] GET / - 1.934 ms
+21/10/2022 4:50:12 PM [INFO] GET /static/media/Gopinath%20Gardens%20Arial.c78d763fe5a2a825b098.mp4 - 1.617 ms
+21/10/2022 4:50:12 PM [INFO] GET /static/js/main.be364b91.js - 0.837 ms
+21/10/2022 4:50:12 PM [INFO] GET /static/css/main.2a18b1c7.css - 1.454 ms
+21/10/2022 4:50:12 PM [INFO] GET /static/media/logo.107c98f43fbe60d9d1ad.png - 1.197 ms
+21/10/2022 4:50:12 PM [INFO] GET /static/media/Logo%20Small.389cc425a4162658b41d.png - 1.940 ms
+21/10/2022 4:50:12 PM [INFO] GET /static/media/fa-solid-900.66104b766c3d0462b3c5.woff2 - 1.172 ms
+21/10/2022 4:50:12 PM [INFO] GET /static/media/logo-lg.0b5442d0a6f42bb1a1ce.png - 1.532 ms
+21/10/2022 4:50:12 PM [INFO] GET /static/media/hero-min.f89c9c7270aacb9c1c1d.jpg - 0.610 ms
+21/10/2022 4:50:12 PM [INFO] GET /static/media/fa-regular-400.639d2000c1ece92eaec8.woff2 - 0.717 ms
+21/10/2022 4:50:12 PM [INFO] GET /static/media/Gopinath%20Gardens%20Arial.c78d763fe5a2a825b098.mp4 - 0.710 ms
+21/10/2022 4:50:12 PM [INFO] GET /favicon.ico - 0.571 ms
+21/10/2022 4:50:28 PM [INFO] GET / - 1.712 ms
+21/10/2022 4:50:28 PM [INFO] GET /static/css/main.2a18b1c7.css - 1.390 ms
+21/10/2022 4:50:28 PM [INFO] GET /static/js/main.be364b91.js - 2.184 ms
+21/10/2022 4:50:28 PM [INFO] GET /static/media/logo.107c98f43fbe60d9d1ad.png - 1.630 ms
+21/10/2022 4:50:28 PM [INFO] GET /static/media/hero-min.f89c9c7270aacb9c1c1d.jpg - 3.586 ms
+21/10/2022 4:50:28 PM [INFO] GET /static/media/logo-lg.0b5442d0a6f42bb1a1ce.png - 1.492 ms
+21/10/2022 4:50:28 PM [INFO] GET /static/media/Logo%20Small.389cc425a4162658b41d.png - 1.720 ms
+21/10/2022 4:50:28 PM [INFO] GET /static/media/fa-regular-400.639d2000c1ece92eaec8.woff2 - 4.516 ms
+21/10/2022 4:50:28 PM [INFO] GET /static/media/fa-solid-900.66104b766c3d0462b3c5.woff2 - 5.327 ms
+21/10/2022 4:50:29 PM [INFO] GET /favicon.ico - 2.132 ms
+21/10/2022 4:51:08 PM [INFO] Express API server has been successfully shutdown with an interrupt
