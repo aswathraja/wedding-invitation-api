@@ -5979,3 +5979,7 @@ Error: ENOENT: no such file or directory, open '/home/ubuntu/ssl/aswathraja_com/
 21/10/2022 4:50:28 PM [INFO] GET /static/media/fa-solid-900.66104b766c3d0462b3c5.woff2 - 5.327 ms
 21/10/2022 4:50:29 PM [INFO] GET /favicon.ico - 2.132 ms
 21/10/2022 4:51:08 PM [INFO] Express API server has been successfully shutdown with an interrupt
+26/10/2022 7:12:28 PM [INFO] Express API listening on HTTP port : 3001 with PID : 95944 and PPID : 95919
+26/10/2022 7:59:47 PM [INFO] Express API server has been successfully shutdown with an interrupt
+26/10/2022 7:59:52 PM [INFO] Express API listening on HTTP port : 3001 with PID : 98807 and PPID : 95919
+27/10/2022 2:55:16 AM [INFO] Express API server has been successfully shutdown with an interrupt

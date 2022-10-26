@@ -12,7 +12,7 @@ const config = require("./app/config/app.config");
 const logger = require("./app/config/logger");
 const path = require('path');
 const fs = require("fs");
-
+const cors_proxy = require('cors-anywhere');
 
 
 // Gracefully handle interrupt signal and exit the process
@@ -132,6 +132,7 @@ app.get('/', function (req, res) {
 // Define the port number to listen on and start the app.
 const httpsPort = config.httpsPort||3000;
 const httpPort = config.httpPort||3001;
+const corsPort = config.corsPort||3002;
 
 https.createServer({
 	cert: fs.readFileSync(config.SSL_CERT_PATH),
@@ -140,3 +141,9 @@ https.createServer({
   },app).listen(httpsPort, () => logger.info("Express API listening on HTTPS port : " + httpsPort + " with PID : " + process.pid + " and PPID : " + process.ppid ));
 
 app.listen(httpPort, () => logger.info("Express API listening on HTTP port : " + httpPort + " with PID : " + process.pid + " and PPID : " + process.ppid ))
+
+cors_proxy.createServer({
+    originWhitelist: [], // Allow all origins
+}).listen(corsPort, function() {
+    console.log('CORS Anywhere server running on ' + corsPort);
+});
