@@ -90,6 +90,7 @@ app.use(express.json());
 // Parse requests of content-type: application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
+const corsPort = config.corsPort||3002;
 
 cors_proxy.createServer({
     originWhitelist: [], // Allow all origins
@@ -139,7 +140,6 @@ app.get('/', function (req, res) {
 // Define the port number to listen on and start the app.
 const httpsPort = config.httpsPort||3000;
 const httpPort = config.httpPort||3001;
-const corsPort = config.corsPort||3002;
 
 https.createServer({
 	cert: fs.readFileSync(config.SSL_CERT_PATH),
