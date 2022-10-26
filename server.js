@@ -90,6 +90,13 @@ app.use(express.json());
 // Parse requests of content-type: application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
+
+cors_proxy.createServer({
+    originWhitelist: [], // Allow all origins
+}).listen(corsPort, function() {
+    console.log('CORS Anywhere server running on ' + corsPort);
+});
+
 app.use((req,res,next) => {
 	if(req.protocol === 'http')
 	{
@@ -141,9 +148,3 @@ https.createServer({
   },app).listen(httpsPort, () => logger.info("Express API listening on HTTPS port : " + httpsPort + " with PID : " + process.pid + " and PPID : " + process.ppid ));
 
 app.listen(httpPort, () => logger.info("Express API listening on HTTP port : " + httpPort + " with PID : " + process.pid + " and PPID : " + process.ppid ))
-
-cors_proxy.createServer({
-    originWhitelist: [], // Allow all origins
-}).listen(corsPort, function() {
-    console.log('CORS Anywhere server running on ' + corsPort);
-});
