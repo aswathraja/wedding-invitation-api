@@ -47,10 +47,11 @@ app.disable('x-powered-by');
 app.use(async function(req,res,next) {
 	res.setHeader("Content-Security-Policy","frame-src https://google.com/maps/");
 	res.setHeader("Cross-Origin-Resource-Policy","cross-origin");
+	res.setHeader("Access-Control-Allow-Origin", "https://" + req.hostname);
 	if(req.originalUrl.includes("assets"))
 	{
 		res.setHeader("Cross-Origin-Resource-Policy","cross-origin");
-		res.setHeader("Access-Control-Allow-Origin", "http://" + req.hostname);
+		res.setHeader("Access-Control-Allow-Origin", "https://" + req.hostname);
 	}
 	next()
 });
