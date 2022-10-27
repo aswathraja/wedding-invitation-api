@@ -12,7 +12,6 @@ const config = require("./app/config/app.config");
 const logger = require("./app/config/logger");
 const path = require('path');
 const fs = require("fs");
-const cors_proxy = require('cors-anywhere');
 
 
 // Gracefully handle interrupt signal and exit the process
@@ -89,14 +88,6 @@ app.use(express.json());
 
 // Parse requests of content-type: application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
-
-const corsPort = config.corsPort||3002;
-
-cors_proxy.createServer({
-    originWhitelist: [], // Allow all origins
-}).listen(corsPort, function() {
-    console.log('CORS Anywhere server running on ' + corsPort);
-});
 
 app.use((req,res,next) => {
 	if(req.protocol === 'http')
