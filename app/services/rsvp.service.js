@@ -77,7 +77,7 @@ exports.retrieveRSVP = async (req, res) => {
 exports.saveRSVP = (req, res) => {
 	try {
 			// Return 'Bad Request' response for any invalid request
-			if (!req.body.name || !req.body.phone || !req.body.guests || !req.body.guestType  || req.body.name === '' || req.body.phone === '' || req.body.guests === '' || req.body.guestType === '') {
+			if (!req.body.name || !req.body.phone || !req.body.guests || !req.body.guesttype  || req.body.name === '' || req.body.phone === '' || req.body.guests === '' || req.body.guesttype === '') {
 				res.status(400).send({
 					message: "Content cannot be empty!"
 				});
