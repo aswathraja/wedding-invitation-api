@@ -89,7 +89,7 @@ exports.saveRSVP = (req, res) => {
 				phone: req.body.phone,
 				guests: parseInt(req.body.guests),
 				personalrequests:req.body.personalreqests && req.body.personalreqeusts.length > 0 ? req.body.persoanlrequests : ' ',
-				guestType: req.body.guestType,
+				guestType: req.body.guesttype,
 				invitecode : Math.random() * (9999 - 1000) + 100
 			};
 			// axios.post("https://script.google.com/macros/s/AKfycbxUvzB3I3v2ZO10OZCsQTB_d9Edgxu0cDWHNemAD9P4_gbPn1UzrBaGU-CivqwdAeK6dg/exec",rsvpbody).then(response => {
@@ -103,6 +103,7 @@ exports.saveRSVP = (req, res) => {
 						rsvp.phone = req.body.phone
 						rsvp.guests = parseInt(req.body.guests);
 						rsvp.personalrequests = req.body.personalrequests;
+						rsvp.guesttype = req.body.guesttype
 						rsvp.save();
 						res.send(rsvp);
 						return;
