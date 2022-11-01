@@ -24,6 +24,10 @@ module.exports = (sequelize, Sequelize) => {
 			type: Sequelize.STRING,
 			allowNull: true,
 		},
+		guestType: {
+			type: Sequelize.STRING,
+			allowNull: false,
+		},
 		invitecode: {
 			type: Sequelize.INTEGER,
 			allowNull: false

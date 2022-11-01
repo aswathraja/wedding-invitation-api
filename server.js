@@ -60,7 +60,7 @@ app.use(async function(req,res,next) {
 // Define Cross-Origin domains and other CORS options to be used by the app
 let corsOptions = {
 	origin: function (origin,callback) {
-		if(/(^http:\/\/192\.168\.1\..*[:]*[0-9]*$)|(^http:\/\/localhost[:]*[0-9]*$)|(^http[s]*:\/\/aswathraja.com[:]*[0-9]*$)|(^http:\/\/[a-zA-Z0-9-]+.local([:0-9])*$)$/.test(origin))
+		if(/(^http:\/\/192\.168\.1\..*[:]*[0-9]*$)|(^http:\/\/localhost[:]*[0-9]*$)|(^http.[s]*.[:].[\/].[\/].(www\.)*.(aswathraja.com)[:]*[0-9]*$)|(^http:\/\/[a-zA-Z0-9-]+.local([:0-9])*$)$/.test(origin))
 		{
 			// Allow localhost and local network domains
 			callback(null, true);
