@@ -77,7 +77,7 @@ exports.retrieveRSVP = async (req, res) => {
 exports.saveRSVP = (req, res) => {
 	try {
 			// Return 'Bad Request' response for any invalid request
-			if (!req.body.name || !req.body.phone || !req.body.guests  || req.body.name === '' || req.body.phone === '' || req.body.guests === '') {
+			if (!req.body.name || !req.body.phone || !req.body.guests || !req.body.guestType  || req.body.name === '' || req.body.phone === '' || req.body.guests === '' || req.body.guestType === '') {
 				res.status(400).send({
 					message: "Content cannot be empty!"
 				});
@@ -89,6 +89,7 @@ exports.saveRSVP = (req, res) => {
 				phone: req.body.phone,
 				guests: parseInt(req.body.guests),
 				personalrequests:req.body.personalreqests && req.body.personalreqeusts.length > 0 ? req.body.persoanlrequests : ' ',
+				guestType: req.body.guestType,
 				invitecode : Math.random() * (9999 - 1000) + 100
 			};
 			// axios.post("https://script.google.com/macros/s/AKfycbxUvzB3I3v2ZO10OZCsQTB_d9Edgxu0cDWHNemAD9P4_gbPn1UzrBaGU-CivqwdAeK6dg/exec",rsvpbody).then(response => {
