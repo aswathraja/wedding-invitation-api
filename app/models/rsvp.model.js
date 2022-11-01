@@ -24,7 +24,7 @@ module.exports = (sequelize, Sequelize) => {
 			type: Sequelize.STRING,
 			allowNull: true,
 		},
-		guestType: {
+		guesttype: {
 			type: Sequelize.STRING,
 			allowNull: false,
 		},
