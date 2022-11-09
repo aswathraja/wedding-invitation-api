@@ -90,12 +90,11 @@ app.use(express.json());
 // Parse requests of content-type: application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
-app.use((req,res,next) => {
+app.use((req,res) => {
 	if(req.protocol === 'http')
 	{
 		res.redirect(301,`https://` + req.headers.host + req.url );
 	}
-	next();
 });
 
 app.use(express.static(path.join(__dirname, 'build')));
@@ -114,12 +113,6 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 // db.sequelize.sync({ force: true }).then(() => {
 // logger.info("Drop and re-sync db.");
-// });
-
-// Base unauthenticated URL 
-// app.get("/", (req, res) => {
-// 	res.json({ message: "Welcome to Raja Home API." });
-// 	return;
 // });
 
 // Include the routes defined in app/routes/*.js

@@ -1,6 +1,6 @@
 // Author : Aswath Raja
-// Scope : Define the authentication endpoints to login and verify a token. 
-//         Define the base authentication route of the app.
+// Scope : Define the RSVP endpoints to save and retrieve RSVP details. 
+//         Define the base RSVP route of the app.
 
 module.exports = app => {
 	// Import all the required packages and project files
@@ -15,6 +15,6 @@ module.exports = app => {
 	// Save a RSVP 'POST' Request
 	router.post("/saversvp", rsvpservice.saveRSVP);
 
-	// Base authentication route
+	// Base RSVP route
 	app.use("/api/rsvp", router);
 };

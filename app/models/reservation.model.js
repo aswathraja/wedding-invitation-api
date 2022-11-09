@@ -1,5 +1,5 @@
 // Author : Aswath Raja
-// Scope : Define the 'Category' modal object
+// Scope : Define the 'Reservation' modal object
 
 module.exports = (sequelize, Sequelize) => {
 
