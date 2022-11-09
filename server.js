@@ -53,7 +53,7 @@ app.use(async function(req,res,next) {
 		res.setHeader("Cross-Origin-Resource-Policy","cross-origin");
 		res.setHeader("Access-Control-Allow-Origin", "https://" + req.hostname);
 	}
-	next()
+	next();
 });
 
 
@@ -94,7 +94,9 @@ app.use((req,res) => {
 	if(req.protocol === 'http')
 	{
 		res.redirect(301,`https://` + req.headers.host + req.url );
+		return;
 	}
+	next();
 });
 
 app.use(express.static(path.join(__dirname, 'build')));
