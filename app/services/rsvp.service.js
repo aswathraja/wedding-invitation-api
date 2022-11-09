@@ -3,7 +3,6 @@
 //         Define private functions to create a new user session
 
 // Import all the requires packages and project files
-const axios = require('axios');
 const db = require("../models/index");
 const Op = db.Sequelize.Op;
 const { QueryTypes } = require('sequelize');
