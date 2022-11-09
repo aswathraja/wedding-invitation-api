@@ -18,7 +18,6 @@ module.exports = {
 	},
 	httpsPort:3000,
 	httpPort:3001,
-	corsPort:3002,
 	TOKEN_PATH:"<Enter the path to your token.json file from Google API>",
 	CREDENTIALS_PATH:"<Enter the path to your credentials.json file from Google API>",
 	logPath:"./logs/",

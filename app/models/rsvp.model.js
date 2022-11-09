@@ -24,6 +24,10 @@ module.exports = (sequelize, Sequelize) => {
 			type: Sequelize.STRING,
 			allowNull: true,
 		},
+		altphone: {
+			type: Sequelize.STRING,
+			allowNull: false,
+		},
 		guesttype: {
 			type: Sequelize.STRING,
 			allowNull: false,

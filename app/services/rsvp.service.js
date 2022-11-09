@@ -9,6 +9,7 @@ const Op = db.Sequelize.Op;
 const { QueryTypes } = require('sequelize');
 const rsvps = db.rsvps;
 const reservations = db.reservations;
+const knownrsvps = db.knownrsvps;
 const jwt = require('jsonwebtoken');
 const moment = require('moment') 
 const config = require("../config/app.config");
@@ -34,12 +35,17 @@ exports.retrieveRSVP = async (req, res) => {
 			if(req.body.phone.length > 0)
 			{
 				parsedConditions.push({'phone':req.body.phone})
+				parsedConditions.push({'altphone':{[Op.like]: `%,${req.body.phone},%`}})
 			}
 			var condition = {[Op.or]: parsedConditions};
-			rsvps.findOne({where: condition,include:reservations})
+			rsvps.findOne({where: condition,include:[{model:reservations,as:'reservations'},{model:knownrsvps,include:[{model:rsvps,include:[reservations],attributes: {exclude: ['id','createdAt','updatedAt','invitecode']}}]}],attributes: {exclude: ['createdAt','updatedAt']}})
 			.then(rsvp => {
 				if(rsvp !== null)
 				{
+					for(var knownrsvp of rsvp.knownrsvps)
+					{
+						knownrsvp.rsvp.invitecode = null
+					}
 					res.status(200).send({
 						rsvp:rsvp,
 						newRSVP:false
@@ -87,23 +93,23 @@ exports.saveRSVP = (req, res) => {
 				name: req.body.name,
 				email: req.body.email ? req.body.email : '',
 				phone: req.body.phone,
+				altphone: req.body.altphone,
 				guests: parseInt(req.body.guests),
 				personalrequests:req.body.personalreqests && req.body.personalreqeusts.length > 0 ? req.body.persoanlrequests : ' ',
 				guestType: req.body.guesttype,
 				invitecode : Math.random() * (9999 - 1000) + 100
-			};
-			// axios.post("https://script.google.com/macros/s/AKfycbxUvzB3I3v2ZO10OZCsQTB_d9Edgxu0cDWHNemAD9P4_gbPn1UzrBaGU-CivqwdAeK6dg/exec",rsvpbody).then(response => {
-				// console.log("response body",response.body)				
+			};			
 				var condition = {[Op.or]: [{ phone: req.body.phone },{ email: req.body.email }]};
 				rsvps.findOne({where: condition})
 				.then(rsvp => {
 					if(rsvp !== null)
 					{
-						rsvp.email = req.body.email ? req.body.email : ''
-						rsvp.phone = req.body.phone
+						rsvp.email = req.body.email ? req.body.email : '';
+						rsvp.phone = req.body.phone;
 						rsvp.guests = parseInt(req.body.guests);
 						rsvp.personalrequests = req.body.personalrequests;
-						rsvp.guesttype = req.body.guesttype
+						rsvp.guesttype = req.body.guesttype;
+						rsvp.altphone = req.body.altphone;
 						rsvp.save();
 						res.send(rsvp);
 						return;

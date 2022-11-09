@@ -31,10 +31,15 @@ db.sequelize = sequelize;
 // to the DB Object
 db.rsvps = require("./rsvp.model.js")(sequelize, Sequelize);
 db.reservations = require("./reservation.model.js")(sequelize, Sequelize);
+db.knownrsvps = require("./knownrsvp.model.js")(sequelize, Sequelize);
 
-// Room Associations
+// Reservations Associations
 db.rsvps.hasMany(db.reservations);
 db.reservations.belongsTo(db.rsvps);
 
-
+// Known Guests Associations
+db.rsvps.hasMany(db.knownrsvps,{foreignKey: "id",
+targetKey: "knownGuestId"});
+db.knownrsvps.belongsTo(db.rsvps,{foreignKey: "knownGuestId",
+targetKey: "id"});
 module.exports = db;
