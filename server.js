@@ -45,7 +45,7 @@ app.disable('x-powered-by');
 
 // Logging requests to the API and add required headers for static asset requests
 app.use(async function(req,res,next) {
-	res.setHeader("Content-Security-Policy","frame-src https://aswathraja.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://aswathraja.com/static/* https://*.googleapis.com https://*.gstatic.com *.google.com https://*.ggpht.com *.googleusercontent.com blob:;img-src 'self' https://*.googleapis.com https://*.gstatic.com *.google.com  *.googleusercontent.com data:;frame-src *.google.com;connect-src 'self' https://*.googleapis.com *.google.com https://*.gstatic.com  data: blob:;font-src https://aswathraja.com/static/* https://fonts.gstatic.com;style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;worker-src blob:; object-src 'none'");
+	res.setHeader("Content-Security-Policy","script-src 'self' 'unsafe-inline' 'unsafe-eval' https://aswathraja.com/static/* https://*.googleapis.com https://*.gstatic.com *.google.com https://*.ggpht.com *.googleusercontent.com blob:;img-src 'self' https://*.googleapis.com https://*.gstatic.com *.google.com  *.googleusercontent.com data:;frame-src *.google.com;connect-src 'self' https://*.googleapis.com *.google.com https://*.gstatic.com https://aswathraja.com  data: blob:;font-src https://aswathraja.com aswathraja.com aswathraja.com/* https//aswathraja.com/* https://fonts.gstatic.com;style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;worker-src blob:; object-src 'none'");
 	res.setHeader("Access-Control-Allow-Origin", "https://" + req.hostname);
 	if(req.originalUrl.includes("assets"))
 	{
