@@ -24,7 +24,7 @@ module.exports = (sequelize, Sequelize) => {
 			type: Sequelize.BIGINT,
 			allowNull: true,
 		},
-		transportcontact: {
+		transportcoordinator: {
 			type: Sequelize.STRING,
 			allowNull: true,
 		},
