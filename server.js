@@ -45,8 +45,7 @@ app.disable('x-powered-by');
 
 // Logging requests to the API and add required headers for static asset requests
 app.use(async function(req,res,next) {
-	res.setHeader("Content-Security-Policy","frame-src https://google.com/maps/");
-	res.setHeader("Cross-Origin-Resource-Policy","cross-origin");
+	res.setHeader("Content-Security-Policy","frame-src script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googleapis.com https://*.gstatic.com *.google.com https://*.ggpht.com *.googleusercontent.com blob:;img-src 'self' https://*.googleapis.com https://*.gstatic.com *.google.com  *.googleusercontent.com data:;frame-src *.google.com;connect-src 'self' https://*.googleapis.com *.google.com https://*.gstatic.com  data: blob:;font-src https://fonts.gstatic.com;style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;worker-src blob:;");
 	res.setHeader("Access-Control-Allow-Origin", "https://" + req.hostname);
 	if(req.originalUrl.includes("assets"))
 	{
