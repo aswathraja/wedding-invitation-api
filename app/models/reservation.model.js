@@ -16,11 +16,15 @@ module.exports = (sequelize, Sequelize) => {
 			type: Sequelize.INTEGER,
 			allowNull: true,
 		},
+		hotelcontact: {
+			type: Sequelize.STRING,
+			allowNull: true,
+		},
 		hotelphone: {
 			type: Sequelize.BIGINT,
 			allowNull: true,
 		},
-		transporttype: {
+		transportcontact: {
 			type: Sequelize.STRING,
 			allowNull: true,
 		},
