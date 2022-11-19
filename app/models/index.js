@@ -38,8 +38,11 @@ db.rsvps.hasMany(db.reservations);
 db.reservations.belongsTo(db.rsvps);
 
 // Known Guests Associations
-db.rsvps.hasMany(db.knownrsvps,{foreignKey: "id",
+db.rsvps.hasMany(db.knownrsvps);
+db.knownrsvps.belongsTo(db.rsvps);
+db.knownrsvps.hasOne(db.rsvps,{foreignKey: "id",
 targetKey: "knownGuestId"});
 db.knownrsvps.belongsTo(db.rsvps,{foreignKey: "knownGuestId",
 targetKey: "id"});
+
 module.exports = db;

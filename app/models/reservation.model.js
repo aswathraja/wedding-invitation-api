@@ -24,11 +24,11 @@ module.exports = (sequelize, Sequelize) => {
 			type: Sequelize.BIGINT,
 			allowNull: true,
 		},
-		transportcoordinator: {
+		shuttlecoordinator: {
 			type: Sequelize.STRING,
 			allowNull: true,
 		},
-		transportphone: {
+		shuttlephone: {
 			type: Sequelize.BIGINT,
 			allowNull: true,
 		},

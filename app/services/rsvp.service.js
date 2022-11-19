@@ -38,10 +38,6 @@ exports.retrieveRSVP = async (req, res) => {
 			.then(rsvp => {
 				if(rsvp !== null)
 				{
-					for(var knownrsvp of rsvp.knownrsvps)
-					{
-						knownrsvp.rsvp.invitecode = null
-					}
 					res.status(200).send({
 						rsvp:rsvp,
 						newRSVP:false
