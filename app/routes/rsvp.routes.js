@@ -12,6 +12,9 @@ module.exports = app => {
 	// Retrieve an RSVP along with any reservation details and Validate a new RSVP In 'POST' Request
 	router.post("/retrieversvp", rsvpservice.retrieveRSVP);
 
+	// Retrieve an RSVP along with any reservation details and Validate a new RSVP In 'POST' Request
+	router.post("/searchguests", rsvpservice.retrieveRSVP);
+
 	// Save a RSVP 'POST' Request
 	router.post("/saversvp", rsvpservice.saveRSVP);
 

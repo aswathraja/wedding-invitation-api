@@ -34,7 +34,7 @@ exports.retrieveRSVP = async (req, res) => {
 				parsedConditions.push({'altphone':{[Op.like]: `%,${req.body.phone},%`}})
 			}
 			var condition = {[Op.or]: parsedConditions};
-			rsvps.findOne({where: condition,include:[{model:reservations,as:'reservations'},{model:knownrsvps,include:[{model:rsvps,include:[reservations],attributes: {exclude: ['id','createdAt','updatedAt','invitecode']}}]}],attributes: {exclude: ['createdAt','updatedAt']}})
+			rsvps.findOne({where: condition, include: [{model:reservations, as:'reservations'},{model:knownrsvps, include:[{model:rsvps, include: [reservations], attributes: {exclude: ['id','createdAt','updatedAt','invitecode']}}]}], attributes: {exclude: ['createdAt','updatedAt']}})
 			.then(rsvp => {
 				if(rsvp !== null)
 				{
