@@ -1,6 +1,5 @@
 // Author : Aswath Raja
-// Scope : Define the Authentication functions to login and verify a token. 
-//         Define private functions to create a new user session
+// Scope : Define the RSVP functions to save and retrieve RSVP details along with reservations and known guests.
 
 // Import all the requires packages and project files
 const db = require("../models/index");
