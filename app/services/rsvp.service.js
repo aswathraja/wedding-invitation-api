@@ -11,7 +11,7 @@ const config = require("../config/app.config");
 const logger = require("../config/logger");
 
 
-// Scope : Authentication function for the 'login' endpoint
+// Scope : Retrieve saved RSVP details along with all the associations needed for the website
 exports.retrieveRSVP = async (req, res) => {
 	try{
 			// Return 'Bad Request' response for any invalid request

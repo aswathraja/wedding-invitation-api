@@ -23,6 +23,10 @@ module.exports = (sequelize, Sequelize) => {
 		traveltype: {
 			type: Sequelize.STRING,
 			allowNull:false
+		},
+		travelcontact: {
+			type: Sequelize.BIGINT,
+			allowNull:true
 		}
 
 	},
